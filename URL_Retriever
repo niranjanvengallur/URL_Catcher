@@ -1,0 +1,16 @@
+import sys
+
+file = open(sys.argv[1])
+file_lines = file.readlines()
+
+i = 0
+
+while (i < len(file_lines)):
+   urlcheck = file_lines[i].find("a href")
+   if(urlcheck != -1):
+       # print(urlcheck)
+       urlstart = file_lines[i].find('"', urlcheck)
+       urlend = file_lines[i].find('"', urlstart + 1)
+       url = file_lines[i][urlstart+1:urlend]
+       print(url)
+   i = i + 1
