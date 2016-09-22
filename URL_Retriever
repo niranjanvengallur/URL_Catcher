@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 import sys
 
 file = open(sys.argv[1])
@@ -15,4 +18,7 @@ while (i < len(file_lines)):
        url = file_lines[i][urlstart+1:urlend]
        print(url)
    i = i + 1
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
